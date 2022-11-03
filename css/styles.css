@@ -145,10 +145,24 @@ body {
   color: var(--text-color-accent);
 }
 
-/* Contact links */
+/* Header contacts */
 
 .header-contacts {
   margin-left: auto;
+}
+
+.header-contacts__icon {
+  --color4: currentColor;
+
+  margin-right: 10px;
+}
+
+.header-contacts__icon.icon-envelope {
+  vertical-align: -0.1em;
+}
+
+.header-contacts__icon.icon-smartphone {
+  vertical-align: -0.25em;
 }
 
 .header-contacts__link {
