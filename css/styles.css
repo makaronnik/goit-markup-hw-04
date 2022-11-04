@@ -320,6 +320,9 @@ body {
   margin-left: var(--list-items-gap);
 
   background-color: var(--bg-color-primary);
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
 }
 
 .team-cards__description {
@@ -517,6 +520,12 @@ body {
   background-color: var(--bg-color-button-accent-primary);
 }
 
+.portfolio-filter__button:hover,
+.portfolio-filter__button:focus {
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
+}
+
 /* Portfolio cards */
 
 .portfolio-cards {
@@ -533,9 +542,15 @@ body {
 }
 
 .portfolio-cards__link {
+  display: block;
   text-decoration: none;
 
   color: var(--text-color-primary);
+}
+
+.portfolio-cards__link:hover {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
 .portfolio-cards__description {
