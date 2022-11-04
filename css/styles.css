@@ -5,7 +5,7 @@
   --text-color-secondary: #757575;
   --text-color-accent: #2196f3;
   --text-color-logo: #000;
-  --text-color-logo-footer: #fff;
+  --text-color-footer: #fff;
   --text-color-hero: #fff;
   --text-color-button-text-light: #fff;
   --text-color-button-text-dark: #212121;
@@ -343,12 +343,15 @@ body {
   color: var(--text-color-secondary);
 }
 
+.team-cards__social-links {
+  margin-top: 16px;
+  justify-content: center;
+}
+
 /* Social links */
 
 .social-links {
   display: flex;
-  justify-content: center;
-  margin-top: 16px;
 }
 
 .social-links__item:not(:last-child) {
@@ -422,8 +425,38 @@ body {
   background-color: var(--bg-color-dark);
 }
 
+.site-footer__container {
+  display: flex;
+}
+
+.site-footer__nav-links {
+  width: 231px;
+}
+
 .site-footer__logo {
-  color: var(--text-color-logo-footer);
+  color: var(--text-color-footer);
+}
+
+.site-footer__social-links {
+  padding-top: 12px;
+  margin-left: 70px;
+}
+
+.site-footer__heading {
+  font-size: 14px;
+  line-height: 1.14;
+  text-transform: uppercase;
+
+  color: var(--text-color-footer);
+}
+
+.site-footer__social-list {
+  margin-top: 20px;
+}
+
+.site-footer__social-link {
+  color: var(--text-color-footer);
+  background-color: rgba(255, 255, 255, 0.1);
 }
 
 /* Footer contacts */
