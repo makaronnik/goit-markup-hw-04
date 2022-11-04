@@ -11,6 +11,8 @@
   --text-color-button-text-dark: #212121;
   --text-color-contacts: rgba(255, 255, 255, 0.6);
   --text-color-address: #fff;
+  --text-color-social: #afb1b8;
+  --text-color-social-hover: #fff;
   --bg-color-primary: #fff;
   --bg-color-dark: #2f303a;
   --bg-color-gray: #f5f4fa;
@@ -340,6 +342,39 @@ body {
   font-size: 16px;
   line-height: 1.19;
   color: var(--text-color-secondary);
+}
+
+/* Social links */
+
+.social-links {
+  display: flex;
+  justify-content: center;
+  margin-top: 16px;
+}
+
+.social-links__item:not(:last-child) {
+  margin-right: 10px;
+}
+
+.social-links__link {
+  display: inline-block;
+  height: 44px;
+  width: 44px;
+  padding: 12px;
+
+  border-radius: 50%;
+
+  color: var(--text-color-social);
+}
+
+.social-links__link:hover,
+.social-links__link:focus {
+  color: var(--text-color-social-hover);
+  background-color: var(--bg-color-button-accent-primary);
+}
+
+.social-links__icon {
+  --color1: currentColor;
 }
 
 /* Site footer */
